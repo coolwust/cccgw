@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function () {
     play.classList.add('slide-delete');
     window.setTimeout(function () {
       change(1);
-      auto(true);
     }, 2000);
+    auto(true);
   });
   auto(true);
 });
