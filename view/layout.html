@@ -1,0 +1,45 @@
+{{define "layout"}}
+  <!doctype HTML>
+  <html lang="zh-Hant">
+    <head>
+      <title>基督教華府中國教會</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="/public/css/reset.css">
+      <link rel="stylesheet" type="text/css" href="/public/css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="/public/css/layout.css">
+      {{template "head" .}}
+    </head>
+    <body>
+      <header class="header">
+        <div class="content">
+          <h1 class="title">基督教華府中國教會</h1>
+          <p class="found">創始於<br>1957年</p>
+          <ul class="options">
+            <li><a href="#"><i class="fa fa-sign-in"></i>會員登陸</a></li>
+            <li><a href="#"><i class="fa fa-language"></i>English</a></li>
+          </ul>
+        </div>
+      </header>
+      <nav class="nav">
+        <div class="content">
+          <ul>
+            <li class="nav-current"><a href="#"><i class="fa fa-home"></i>首頁</a></li>
+            <li><a href="#"><i class="fa fa-calendar"></i>活動</a></li>
+            <li><a href="#"><i class="fa fa-graduation-cap"></i>學校</a></li>
+            <li><a href="#"><i class="fa fa-cubes "></i>部落格</a></li>
+            <li><a href="#"><i class="fa fa-file-image-o"></i>相冊</a></li>
+            <li><a href="#"><i class="fa fa-leaf"></i>關於我們</a></li>
+            <li><a href="#"><i class="fa fa-file-sound-o"></i>資源</a></li>
+            <li><a href="#"><i class="fa fa-share-square-o"></i>科堡分堂</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        {{template "main" .}}
+      </main>
+      <script src="https://use.typekit.net/jub0cmk.js"></script>
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    </body>
+  </html>
+{{end}}

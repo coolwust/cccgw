@@ -1,0 +1,157 @@
+.nav {
+  background-color: rgba(248, 248, 248, 1);
+}
+.slide {
+  height: 60vh;
+  min-height: 370px;
+  max-height: 580px;
+  width: 100%;
+  display: block;
+  color: white;
+  position: relative;
+}
+.slide-controls {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  z-index: 2;
+  opacity: 0;
+  transition: all ease 0.2s;
+}
+.slide:hover .slide-controls {
+  opacity: 1;
+}
+.slide-control {
+  position: relative;
+  left: -50%;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin-left: 4px;
+  border-radius: 3px;
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0.5;
+  user-select: none;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none; 
+}
+.slide-control:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.slide-delete {
+  display: none;
+}
+.slide-entity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease-in-out 0.5s;
+}
+.slide-entity .content {
+  height: 60vh;
+  min-height: 370px;
+  max-height: 580px;
+  position: relative;
+}
+.slide-current {
+  opacity: 1;
+  z-index: 1;
+}
+.slide-welcome {
+  background: 
+    url('../images/home-slide-pattern.png') left/2px 2px repeat,
+    url('../images/home-slide-welcome.jpg') center/cover no-repeat;
+  z-index: 1;
+}
+/*
+.slide-welcome figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  padding-bottom: 5vh;
+}
+.slide-welcome h3 {
+  font-size: 26px;
+  line-height: 1.6em;
+}
+.slide-welcome h2 {
+  font-size: 32px;
+}
+.slide-welcome hr {
+  color: white;
+  width: 80px;
+  height: 2px;
+  background-color: white;
+  margin: 20px 0;
+  border: none;
+}
+.slide-welcome p {
+  line-height: 1.6em;
+}
+.slide-welcome a {
+  margin-top: 20px;
+  display: table;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 10px 18px;
+  color: white;
+  transition: all ease-in-out 0.2s;
+}
+.slide-welcome a:hover {
+  border: 2px solid #109AB3;
+  background-color: #109AB3;
+}
+*/
+.slide-bible {
+  background: 
+    url('../images/home-slide-pattern.png') left/2px 2px repeat,
+    url('../images/home-slide-bible.jpg') center/cover no-repeat;
+}
+.slide-bible .content {
+  display: flex;
+  align-items: center;
+}
+.slide-bible figcaption {
+}
+.slide-bible h3 {
+  font-size: 26px;
+  line-height: 1.6em;
+}
+.slide-bible h2 {
+  font-size: 32px;
+}
+.slide-bible hr {
+  color: white;
+  width: 80px;
+  height: 2px;
+  background-color: white;
+  margin: 20px 0;
+  border: none;
+}
+.slide-bible p {
+  line-height: 1.6em;
+}
+.slide-bible a {
+  margin-top: 20px;
+  display: table;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 10px 18px;
+  color: white;
+  transition: all ease-in-out 0.2s;
+}
+.slide-bible a:hover {
+  border: 2px solid #109AB3;
+  background-color: #109AB3;
+}
+
+@media (max-width: 1080px) {
+  .slide-welcome figcaption {
+    left: 60px;
+  }
+}
