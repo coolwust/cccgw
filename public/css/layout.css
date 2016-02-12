@@ -103,3 +103,60 @@ a {
   border-top: 4px solid transparent;
   background: none;
 }
+
+.footer {
+  margin-top: 70px;
+  background-color: #242424;
+  color: #FFF;
+  padding: 30px 0 20px 0;
+  /*
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  */
+}
+.footer-photo img {
+  margin-top: 6px;
+  opacity: 0.8;
+}
+.footer .content {
+  display: flex;
+}
+.footer-entity {
+  flex: auto;
+  margin-right: 40px;
+  max-width: 300px;
+}
+.footer-entity h2 {
+  font-size: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(199, 27, 27, 0.6);
+  opacity: 0.9;
+}
+.footer-entity p, .footer-entity span {
+  opacity: 0.9;
+}
+.footer-contact ul {
+  display: table;
+}
+.footer-contact li {
+  display: table-row;
+}
+.footer-contact i, .footer-contact span {
+  display: table-cell;
+  padding: 4px 6px;
+  line-height: 1.4em;
+  white-space: nowrap;
+}
+.footer-contact i {
+  color: #109AB3;
+  opacity: 0.7;
+}
+.footer-about p {
+  line-height: 1.75em;
+}
+.footer-time p {
+  line-height: 1.6em;
+  margin-bottom: 8px;
+}
+
